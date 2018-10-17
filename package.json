@@ -4,10 +4,19 @@
   "description": "hostmaker common component library",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
-    "build": "webpack --mode production",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "build": "yarn clean-components && yarn build-components",
+    "build-components": "NODE_ENV=production lerna exec --parallel -- babel . -d dist --ignore '**/*.spec.js','node_modules','**/*.stories.js'",
+    "clean-components": "NODE_ENV=production lerna exec --parallel -- rm -fr dist"
+  },
+  "private": false,
+  "jest": {
+    "moduleNameMapper": {
+      "(^pkg.*$)": "<rootDir>/packages/$1/src/index.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,11 +31,16 @@
     "@storybook/addon-links": "^3.4.11",
     "@storybook/addons": "^3.4.11",
     "@storybook/react": "^3.4.11",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
+    "lerna": "^3.4.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   }

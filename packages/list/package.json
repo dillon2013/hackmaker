@@ -1,0 +1,15 @@
+{
+  "name": "list",
+  "version": "0.1.0",
+  "description": "",
+  "main": "List.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "text-item": "0.1.0",
+    "image-item": "0.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
