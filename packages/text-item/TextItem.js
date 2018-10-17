@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 function TextItem({text, children, margin}) {
-    return <Wrapper data-test-id="textItem" margin={margin}>{text || children}!</Wrapper>
+    return <Wrapper data-test-id="textItem" margin={margin}>{text || children}</Wrapper>
 }
 
 TextItem.propTypes = {

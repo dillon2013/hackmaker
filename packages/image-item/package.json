@@ -1,5 +1,5 @@
 {
-  "name": "image-item",
+  "name": "@hackmaker/image-item",
   "version": "0.2.1",
   "description": "",
   "main": "./ImageItem.js",
@@ -8,5 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "1e373f7a08afb3f477595a22bf65aa03ba8a3283"
+  "gitHead": "88dabe4b910e26005dda5703039770347401dc00"
 }

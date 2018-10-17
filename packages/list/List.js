@@ -1,6 +1,6 @@
 import React from 'react';
-import TextItem from 'text-item';
-import ImageItem from 'image-item';
+import TextItem from '@hackmaker/text-item';
+import ImageItem from '@hackmaker/image-item';
 
 function List ({title, items, children}) {
     let content;
