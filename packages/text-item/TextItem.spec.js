@@ -8,7 +8,6 @@ describe('TextItem', () => {
             text: 'foo bar baz'
         };
         const component = shallow(<TextItem text={props.text}/>);
-        console.log(component.debug());
-        expect(component.find('div').text()).toEqual(props.text)
+        expect(component.find('[data-test-id="textItem"]').text()).toEqual(props.text)
     })
 });
