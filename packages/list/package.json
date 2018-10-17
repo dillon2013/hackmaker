@@ -1,14 +1,14 @@
 {
   "name": "@hackmaker/list",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "List.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@hackmaker/image-item": "^0.2.1",
-    "@hackmaker/text-item": "^0.2.1"
+    "@hackmaker/image-item": "^0.3.0",
+    "@hackmaker/text-item": "^0.3.0"
   },
   "author": "",
   "license": "ISC",
