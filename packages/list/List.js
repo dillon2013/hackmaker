@@ -17,9 +17,6 @@ function List ({title, items, children}) {
         content = children
     }
 
-    console.log('CONTENT', content)
-
-
     return (
         <div>
             <p>{title}</p>

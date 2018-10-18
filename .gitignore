@@ -2,3 +2,4 @@ node_modules
 dist
 .idea
 *error.log
+*.tgz
